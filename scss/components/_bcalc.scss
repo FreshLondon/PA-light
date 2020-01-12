@@ -32,6 +32,11 @@
 }
 
 #bcalc {
+
+  .def_row {
+
+  }
+
   input {
     color: var(--col-text-main);
   }
@@ -44,6 +49,11 @@
   td {
     color: var(--col-text-main);
     font-size: var(--txt-small);
+
+    .t1 + {
+      background-color: red !important;
+      color: white !important;
+    }
 
     &.def_total,
     &.att_total {
@@ -120,6 +130,7 @@
   .att_ter {
     th,
     td {
+      background-color: rgba(161, 129, 129, 0.12);
       color: var(--col-terran);
     }
   }
@@ -129,6 +140,7 @@
     th,
     td {
       color: var(--col-cathaar);
+      background-color: rgba(77, 136, 188, 0.12);
     }
   }
 
@@ -137,6 +149,7 @@
     th,
     td {
       color: var(--col-xandathrii);
+      background-color: rgba(43, 168, 126, 0.12);
     }
   }
 
@@ -145,6 +158,7 @@
     th,
     td {
       color: var(--col-zikonian);
+      background-color: rgba(201, 55, 22, 0.12);
     }
   }
 
@@ -153,6 +167,7 @@
     th,
     td {
       color: var(--col-eitraides);
+      background-color: rgba(17, 17, 17, 0.12);
     }
   }
 
@@ -165,7 +180,7 @@
     td {
       &:nth-child(2) {
         input {
-          background-color: transparent;
+          background-color: rgb(255, 255, 255);
         }
       }
     }

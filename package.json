@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "pendulum-development",
+  "name": "pa-light",
   "description": "Pendulum development framework",
   "license": "UNLICENSED",
   "private": "true",
@@ -25,5 +25,18 @@
     "gulp-sass-lint": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2"
-  }
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreshLondon/PA-light.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/FreshLondon/PA-light/issues"
+  },
+  "homepage": "https://github.com/FreshLondon/PA-light#readme"
 }

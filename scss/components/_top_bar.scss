@@ -4,7 +4,7 @@
 #page_login #header,
 #page_support #header,
 #page_manual #header {
-  width: 100%;
+  width: 100% !important;
   padding: 0.5rem;
   background: $color-black-dark;
   background: linear-gradient(180deg, $color-black-light 0%, $color-black-medium 15%, $color-black-dark 100%);
