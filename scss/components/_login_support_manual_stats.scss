@@ -54,15 +54,6 @@
   }
 }
 
-
-#page_login #contents .header::before {
-  content: 'Planetarion Login ';
-}
-
-#page_login form {
-  width: 100%;
-}
-
 #page_login form.login label, #page_support form label {
   font-size: var(--txt-small);
   text-transform: uppercase;
@@ -71,13 +62,43 @@
 }
 
 #page_login {
-  form input:not([type="submit"]) {
-    width: 80%;
-    margin: 0 auto 1rem;
+  #contents {
+    margin: 1rem 0;
+
+    .header::before {
+      content: 'Planetarion Login ';
+    }
+
+    .maintext p:last-child {
+      display: none;
+    }
   }
 
-  #contents .maintext p:last-child {
-    display: none;
+  .container {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    overflow: hidden;
+
+    .header:first-child {
+      margin-top: 0;
+    }
+
+    form {
+      width: 100%;
+
+      &.login {
+        text-align: center;
+
+        input[type="submit"] {
+          margin: 0 auto;
+        }
+      }
+
+      input:not([type="submit"]) {
+        width: 80%;
+        margin: 0 auto 1rem;
+      }
+    }
   }
 }
 
@@ -191,6 +212,6 @@
 
   th[colspan="17"] {
     background-color: transparent;
-    color: var(--col-text-main);
+    color: white;
   }
 }
