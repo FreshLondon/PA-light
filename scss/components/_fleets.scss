@@ -1,0 +1,30 @@
+/* FLEETS
+   -------------------------------------------------------*/
+#base_behavior {
+  p {
+    color: var(--col-text-main);
+  }
+
+  input[type="submit"] {
+    margin: 0;
+  }
+}
+
+th.superhighlight {
+  color: var(--col-text-main);
+}
+
+#d_from,
+#d_num,
+#d_to {
+  border: 0 !important;
+
+  th,
+  td {
+    color: var(--col-text-main);
+  }
+
+  a:hover {
+    color: $color-primary-dark;
+  }
+}

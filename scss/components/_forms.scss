@@ -1,0 +1,75 @@
+
+#page table input[type="submit"] {
+  margin: 0;
+}
+
+input,
+.input,
+textarea,
+select,
+.checkbox {
+  font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
+  background-color: var(--col-background);
+  border: 1px solid $color-primary;
+  color: var(--col-text-main);
+  font-size: 1rem;
+  height: 1.5rem;
+}
+
+input[type="radio"] {
+  vertical-align: -7px;
+}
+
+option {
+  font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
+  background-color: var(--col-panel-light);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.25rem !important;
+  color: var(--col-text-main);
+  background-color: var(--col-background);
+}
+
+
+input[type="checkbox"] {
+  position: relative;
+  vertical-align: -0.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--col-background);
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+
+  &:checked::before {
+    display: block;
+    content: '\2714';
+    font-weight: bold;
+    color: var(--col-text-main);
+    font-size: 1.2rem;
+    position: absolute;
+    top: -0.5rem;
+  }
+}
+
+input[type="checkbox"],
+select {
+  background-color: var(--col-background) !important;
+  color: var(--col-text-main) !important;
+}
+
+.checkbox > input:active {
+  border: 2px solid #34495E;
+}
+
+textarea {
+  min-height: 5rem;
+}

@@ -1,0 +1,39 @@
+/* Menu
+   -------------------------------------------------------*/
+#menu_top,
+#menu_bottom,
+#menu_view_link {
+  display: none;
+}
+
+#menu {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  padding: 1rem 0;
+  background: var(--col-panel-light);
+  background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+
+  li {
+    padding: 0 0.5rem 0.15rem;
+  }
+
+  > li {
+    &:nth-child(n+3) {
+      margin-top: 1rem;
+    }
+  }
+
+  #menu_time {
+    margin-top: 2rem;
+    font-size: var(--txt-small);
+  }
+}
+
+.menu_grp > span {
+  display: block;
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid var(--col-text-main);
+  font-size: var(--txt-small);
+  font-weight: bold;
+  text-transform: uppercase;
+}
