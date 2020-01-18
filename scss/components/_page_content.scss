@@ -67,7 +67,9 @@ h2 {
     text-align: center;
 
     > br {
-      display: none;
+      &:last-child {
+        display: none;
+      }
     }
   }
 }
@@ -99,7 +101,7 @@ span.center {
 }
 
 .tooltip, .info, .forum_thread_actions, #d_stats, #d_from, #d_num, #d_to, #pabox_outer, #my_bcalcs, #add_own, #add_other, #fleet_select_box, #side_select_box, #con_fleets {
-  background: $color-black-medium !important;
+  background: #e5f3e3 !important;
   border: 0;
   color: $color-offwhite;
   padding: 0.25rem 0.5rem;

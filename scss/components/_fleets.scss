@@ -1,5 +1,17 @@
 /* FLEETS
    -------------------------------------------------------*/
+
+#fleet_overview {
+  tr {
+    &.mission_defend,
+    &.mission_attack {
+      .btn {
+        color: white;
+      }
+    }
+  }
+}
+
 #base_behavior {
   p {
     color: var(--col-text-main);

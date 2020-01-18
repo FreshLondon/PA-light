@@ -1,0 +1,19 @@
+#page_alliance_defence {
+  .maintext {
+    .ally_def_eta_wrapper {
+      .mission_attack {
+        background-color: rgba(255, 0, 0, 0.08);
+      }
+
+      .mission_return {
+        color: #777777;
+        background: rgba(119, 119, 119, 0.08) !important;
+      }
+
+      .relations_war {
+        outline: rgba(255, 0, 0, 0.3) 2px dashed;
+        background: inherit;
+      }
+    }
+  }
+}

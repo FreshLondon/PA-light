@@ -1,0 +1,29 @@
+#page_universe {
+  table {
+    a {
+      color: #202020;
+    }
+
+    tr:first-child th {
+      font-weight: bold;
+      background: #f1f1f1;
+      color: #202020;
+      padding: 12px 4px;
+    }
+  }
+}
+
+
+#intel {
+  tr {
+    th,
+    td {
+      color: $color-primary;
+    }
+  }
+}
+
+#load_box {
+  background: white;
+  border: 2px solid $color-primary;
+}
