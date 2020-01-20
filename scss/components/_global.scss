@@ -302,8 +302,7 @@ option {
 
 /* MEDIA QUERIES
    ---------------------------------*/
-
-@media screen and (max-width: 900px) {
+@include respond-below(md) {
   :root {
     font-size: 14px;
   }
@@ -321,9 +320,4 @@ option {
   #planet_summary {
     grid-column: 2 / 3;
   }
-}
-
-
-#view_news .new td {
-  color: floralwhite;
 }

@@ -45,7 +45,7 @@ h2 {
   font-size: var(--txt-small);
   color: $color-offwhite;
   background: $color-black-dark;
-  background: linear-gradient(180deg, $color-black-light 0%, $color-black-medium 15%, $color-black-dark 100%);
+  background: linear-gradient(180deg, $color-black-light 0%, $color-black-medium 15%, $color-black-dark 100%) !important;
 
   a:hover {
     color: $color-primary-dark;

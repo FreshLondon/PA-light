@@ -1,14 +1,25 @@
 #page_universe {
   table {
     a {
-      color: #202020;
+      color: $color-black;
     }
 
-    tr:first-child th {
-      font-weight: bold;
-      background: #f1f1f1;
-      color: #202020;
-      padding: 12px 4px;
+    tr {
+      &:first-child th {
+        font-weight: bold;
+        background: #f1f1f1;
+        color: $color-black;
+        padding: 12px 4px;
+      }
+
+      td {
+        &.moc,
+        &.mow,
+        &.mod,
+        &.gc {
+          color: $color-black;
+        }
+      }
     }
   }
 }
@@ -23,6 +34,7 @@
   }
 }
 
+
 #load_box {
   background: white;
   border: 2px solid $color-primary;
@@ -35,4 +47,20 @@
 .relations_war,
 .relations_allied {
   outline: none;
+}
+
+.relations_war {
+  background: rgba(255, 0, 0, 0.25);
+}
+
+.relations_nap {
+  background: rgba(173, 173, 0, 0.2);
+}
+
+.relations_allied {
+  background: rgba(166, 255, 0, 0.25);
+}
+
+.relations_own_member {
+  background: rgba(0, 206, 0, 0.25);
 }
