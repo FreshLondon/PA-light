@@ -101,9 +101,9 @@ span.center {
 }
 
 .tooltip, .info, .forum_thread_actions, #d_stats, #d_from, #d_num, #d_to, #pabox_outer, #my_bcalcs, #add_own, #add_other, #fleet_select_box, #side_select_box, #con_fleets {
-  background: #e5f3e3 !important;
-  border: 0;
-  color: $color-offwhite;
+  background: white !important;
+  color: $color-primary !important;
+  border: 2px solid $color-primary;
   padding: 0.25rem 0.5rem;
   white-space: initial;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);
