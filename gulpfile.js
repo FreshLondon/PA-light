@@ -4,21 +4,17 @@
 // $ npm install --global gulp-cli
 // $ npm install
 const {src, dest, watch, series, parallel} = require('gulp');
-const browsersync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
-const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
 const sasslint = require('gulp-sass-lint');
 const cache = require('gulp-cached');
-const concat = require('gulp-concat');
 const gulp = require('gulp');
 const cssmin = require('gulp-cssmin');
-const rename = require('gulp-rename');
-const uglify = require('gulp-uglify');
+// const rename = require('gulp-rename');
 
 //RUN THIS:
-// npm install -save browser-sync gulp-sass gulp-autoprefixer gulp-sourcemaps gulp-plumber gulp-sass-lint gulp-cached gulp-cssmin gulp-rename gulp-uglify
+// npm install -save gulp gulp-sass gulp-autoprefixer gulp-plumber gulp-sass-lint gulp-cached gulp-cssmin
 
 
 // Compile CSS from Sass.
