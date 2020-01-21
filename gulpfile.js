@@ -14,7 +14,7 @@ const cssmin = require('gulp-cssmin');
 // const rename = require('gulp-rename');
 
 //RUN THIS:
-// npm install -save gulp gulp-sass gulp-autoprefixer gulp-plumber gulp-sass-lint gulp-cached gulp-cssmin
+// npm install gulp gulp-sass gulp-autoprefixer gulp-plumber gulp-sass-lint gulp-cached gulp-cssmin
 
 
 // Compile CSS from Sass.
