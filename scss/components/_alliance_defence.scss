@@ -1,14 +1,187 @@
 #page_alliance_defence {
   .maintext {
     .ally_def_eta_wrapper {
+      .ally_def_eta {
+        font-size: 32px;
+
+        img.ally_def_eta_toggle_img {
+          width: 11px;
+          height: 11px;
+        }
+      }
 
       .ally_def_incs_wrapper {
+        border: 2px solid rgba(0, 0, 0, 0.05);
+        margin: 0 0 32px 5px;
+        background: rgba(0, 0, 0, 0.02);
+
         .ally_def_target {
           font-size: 15px;
+
+          .ally_def_target_toggle_link {
+            margin: 0 8px 0 -18px;
+            width: 10px;
+            cursor: pointer;
+
+            img {
+              width: 11px;
+              height: 11px;
+            }
+          }
+
+          .ally_def_target_coords {
+            flex: 1;
+          }
+
+          .ally_def_target_mdata {
+            flex: 7;
+
+            > span {
+              flex: 1;
+            }
+
+            .ally_def_target_mdata_nick {
+              font-size: 17px;
+            }
+
+            .ally_def_target_mdata_roids {
+              position: relative;
+
+              &:before {
+                content: "Asteroids:";
+                font-size: 11px;
+                margin: 5px 5px 0 0;
+              }
+            }
+
+            .ally_def_target_mdata_base {
+              margin-left: 70px;
+
+              &:before {
+                white-space: nowrap;
+                content: "Base fleet:";
+                font-size: 11px;
+                margin: 5px 5px 0 0;
+              }
+            }
+          }
+
+          .ally_def_target_links {
+            flex: 3;
+
+            a {
+              font-size: 0;
+
+              &:after {
+                padding: 2px 4px;
+                border-radius: 4px;
+                font-size: 11px;
+                background: #2d72bb;
+                color: white;
+                content: "BATTLE CALC";
+              }
+            }
+          }
+
+          .ally_def_target_summary {
+            flex: 3;
+
+            span {
+              background: transparent !important;
+            }
+          }
         }
 
         .ally_def_attackers {
           font-size: 13px;
+
+          > div {
+            .ally_def_attacker_coords {
+              flex: 1;
+            }
+
+            .ally_def_attacker_fleetname {
+              flex: 2;
+            }
+
+            .ally_def_attacker_race {
+              flex: 1;
+            }
+
+            .ally_def_attacker_shipcount {
+              flex: 1;
+            }
+
+            .ally_def_attacker_links {
+              flex: 2;
+
+              a {
+                border: 1px solid rgb(185, 102, 0);
+                display: inline-flex;
+                width: 15px;
+                height: 15px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+
+                &.scan_age_new {
+                  background: limegreen;
+                  color: white !important;
+                }
+
+                &.scan_age_older {
+                  background: #d5ff00;
+                  color: $color-black !important;
+                }
+
+                &.scan_age_old {
+                  background: yellow;
+                  color: $color-black !important;
+                }
+
+                &.scan_age_ancient {
+                  background: red;
+                  color: white !important;
+                }
+              }
+            }
+
+            .ally_def_attacker_call_status {
+              flex: 2;
+
+              form {
+                select {
+                  font-size: 12px;
+                  height: 18px;
+                }
+              }
+            }
+
+            .ally_def_attacker_orig_eta {
+              flex: 1;
+            }
+
+            .ally_def_attacker_classes {
+              flex: 2;
+            }
+
+            .ally_def_attacker_intel {
+              flex: 2;
+            }
+          }
+        }
+
+        .ally_def_details {
+          input[type="button"] {
+            margin: 2px 0;
+          }
+        }
+
+        .ally_def_target_coords,
+        .ally_def_attacker_coords,
+        .ally_def_defender_coords {
+          width: auto;
+          padding: 2px 12px 2px 2px;
         }
 
         .relations_war {
@@ -17,7 +190,7 @@
         }
 
         .mission_attack {
-          background-color: rgba(255, 0, 0, 0.08);
+          background-color: rgba(255, 0, 0, 0.05);
         }
 
         .mission_return {
