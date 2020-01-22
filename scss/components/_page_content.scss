@@ -100,7 +100,21 @@ span.center {
   margin-top: 0.5rem;
 }
 
-.tooltip, .info, .forum_thread_actions, #d_stats, #d_from, #d_num, #d_to, #pabox_outer, #my_bcalcs, #add_own, #add_other, #fleet_select_box, #side_select_box, #con_fleets {
+.tooltip,
+.info,
+.forum_thread_actions,
+#d_stats,
+#d_from,
+#d_num,
+#d_to,
+#pabox_outer,
+#my_bcalcs,
+#add_own,
+#add_other,
+#fleet_select_box,
+#side_select_box,
+#con_fleets,
+#dships_box {
   background: white !important;
   color: $color-primary !important;
   border: 2px solid $color-primary;
